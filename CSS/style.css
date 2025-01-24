@@ -1,0 +1,94 @@
+        /* Resetando o padding e margin de todos os elementos*/
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Estilos gerais para o corpo da página */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to bottom, #000000, rgb(37, 92, 92));
+            color: darkslategrey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Garantir que o corpo ocupe toda a altura da tela */
+
+        }
+
+        /* Estilos para o formulário de cadastro */
+        #cadastro {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            width: 400px;
+        }
+
+        /* Estilos gerais para o formulário */
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilos para cada campo dentro do formulário */
+        form div {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos para os campos de entrada (input) */
+        form input {
+            outline: none; /* Remove o contorno padrão */
+            padding: 20px;
+            min-width: 300px; /* Largura mínima dos campos */
+            border: 1px solid rgb(48, 48, 58);
+            border-radius: 20px;
+            font: 16px;
+        }
+
+        /* Estilos para os campos de entrada quando estão em foco (selecionados) */
+        form input:focus {
+            background-color: #D9D9D9;/* Cor de fundo ao focar */
+            border: 1px solid rgb(37, 92, 92);/* Cor da borda ao focar */
+        }
+        
+        /* Estilos específicos para o botão de envio do formulário */
+        form input[type="submit"] {
+            background-color: rgb(37, 92, 92);
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Transição suave na cor de fundo ao passar o mouse */
+        }
+
+        /* Efeitos ao passar o mouse sobre o botão de envio */
+        form input[type="submit"]:hover {
+            background-color: darkgreen; /* Muda a cor de fundo do botão para verde escuro */
+        }
+
+        /* Estilos para a lista de requisitos de senha */
+        ul {
+            margin-top: 10px;
+            margin-left: 40px;
+            list-style: disc inside; /* Estilo de lista com marcação interna */
+            color: grey;
+            font-size: 12px;
+        }
+
+        /* Estilos para o título do formulário */
+        h1 {
+            color: rgb(13, 70, 119);
+            /* Cor do título */
+            text-align: center;
+            margin-bottom: 20px;
+        }
